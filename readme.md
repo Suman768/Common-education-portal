@@ -1,0 +1,10 @@
+- open the folder where ```xaamp``` is installed
+- rename the default htdocs folder as ```htdocs.old``` or whatever you like
+- create a folder and name it ```htdocs```
+- make sure that all these files are in the root directory of the newly created htdocs
+- the ```.htaccess``` file is for server configuration
+- find all the environment variables in ```env.php```
+- every request is forwarded to ```index.php``` (this is configured via ```.htaccess```)
+- in that ```index.php``` there is a switch case that acts as the router to corresponding pages of the website
+- add cases to the switch to for corresponding php pages
+- php pages are to be stored in the ```public``` folder
